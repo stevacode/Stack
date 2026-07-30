@@ -64,6 +64,12 @@ int isFull(Stack st) {
 	return st.top == st.size - 1;
 }
 
+int stackTop(Stack st) {
+	if (!isEmpty(st)) {
+		return st.S[st.top];
+	}
+	return -1;
+}
 
 
 int main()
@@ -74,11 +80,22 @@ int main()
 	push(&st, 20);
 	push(&st, 30);
 	Display(st);
-	cout << "Popped element: " << pop(&st) << endl;
-	cout << "Popped element: " << pop(&st) << endl;
-	cout << "Popped element: " << pop(&st) << endl;
-	cout << "Popped element: " << pop(&st) << endl;
-	Display(st);
-	
+	//cout << "Popped element: " << pop(&st) << endl;
+	//cout << "Popped element: " << pop(&st) << endl;
+	//cout << "Popped element: " << pop(&st) << endl;
+	//cout << "Popped element: " << pop(&st) << endl;
+	//Display(st);
+
+	cout << "Stack Top: " << stackTop(st) << endl;
+	cout << "Is Stack Empty: " << isEmpty(st) << endl;
+	cout << "Is Stack Full: " << isFull(st) << endl;
+	cout << "Element at index 1: " << peek(st, 1) << endl;
+	cout << "Element at index 2: " << peek(st, 2) << endl;
+	cout << "Element at index 3: " << peek(st, 3) << endl;
+	cout << "Element at index 4: " << peek(st, 4) << endl;
+	cout << "Element at index 5: " << peek(st, 5) << endl;
+	cout << "Element at index 6: " << peek(st, 6) << endl;
+	cout << "Element at index 7: " << peek(st, 7) << endl;
+
 	return 0;
 }
