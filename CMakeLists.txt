@@ -12,7 +12,8 @@ endif()
 project ("Stack")
 
 # Add source to this project's executable.
-add_executable (Stack "Stack.cpp" "Stack.h")
+#add_executable (Stack "Stack.cpp" "Stack.h" "StackLinkedList.cpp")
+add_executable (Stack "Stack.h" "StackLinkedList.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Stack PROPERTY CXX_STANDARD 20)
