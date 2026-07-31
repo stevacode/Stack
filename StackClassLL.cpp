@@ -84,5 +84,7 @@ int main()
 	cout << "Top element is: " << stk.peek() << endl;
 	cout << "Popped element is: " << stk.pop() << endl;
 	cout << "Popped element is: " << stk.pop() << endl;
+
+
 	return 0;
 }
